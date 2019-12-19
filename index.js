@@ -15,7 +15,7 @@ function createError (request, field, type) {
 const register = (server, options = {}) => {
   const {
     handleFailedPrecondition = (request, h) => h.redirect('/'),
-    errorViewLocation = 'error-handling'
+    view = 'error'
   } = options
 
   server.ext('onPreResponse', async (request, h) => {
@@ -29,7 +29,7 @@ const register = (server, options = {}) => {
       switch (statusCode) {
         case 403:
         case 404:
-          return h.view(`${errorViewLocation}/${statusCode}`).code(statusCode)
+          return h.view(`${view}`, { statusCode }).code(statusCode)
         case 412: {
           return handleFailedPrecondition(request, h)
         }
