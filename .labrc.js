@@ -1,5 +1,5 @@
 const glob = require("glob")
-const testFiles = glob.sync('source/**/*.test.js')
+const testFiles = glob.sync('lib/**/*.test.js')
 const config = {
   paths: testFiles,
   coverage: true,
