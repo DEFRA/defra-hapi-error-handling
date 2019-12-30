@@ -36,8 +36,6 @@ await server.register([{
 }])
 
 ```
-See unit tests for uploading a file in  <https://github.com/DEFRA/defra-hapi-error-handling/blob/master/lib/photos.test.js> and also the example in <https://github.com/DEFRA/ivory-front-office/blob/master/server/modules/photos/add-photograph.handlers.js>
-
 ## Contributing to this project
 
 Please read the [contribution guidelines](/CONTRIBUTING.md) before submitting a pull request.
