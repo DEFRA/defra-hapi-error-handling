@@ -1,6 +1,6 @@
 {
   "name": "defra-hapi-error-handling",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Hapi plugin to handle errors within routes including error templates",
   "author": "Department for Environment, Food & Rural Affairs",
   "license": "SEE LICENSE IN LICENSE",
@@ -29,15 +29,15 @@
   },
   "homepage": "https://github.com/ajaxscape/defra-hapi-error-handling#readme",
   "dependencies": {
-    "@hapi/joi": "^16.1.8",
+    "@hapi/joi": "^17.1.0",
     "defra-logging-facade": "git+https://github.com/DEFRA/defra-logging-facade.git#master"
   },
   "devDependencies": {
-    "@hapi/code": "^7.0.0",
-    "@hapi/lab": "^21.0.0",
+    "@hapi/code": "^8.0.1",
+    "@hapi/lab": "^22.0.3",
     "codeclimate-test-reporter": "0.5.1",
     "eslint": "^6.8.0",
-    "sinon": "^7.5.0",
+    "sinon": "^8.1.0",
     "standard": "^14.3.1"
   }
 }
